@@ -1,0 +1,73 @@
+/* NAVBAR */
+.navbar-brand {
+  font-weight: 700;
+  color: #333;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 700;
+  border-bottom: 2px solid #ff99cc;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f7f7f7;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* HEADER */
+.header-intro {
+  background: linear-gradient(90deg, #ff99cc, #ffb6c1);
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.header-intro h1 {
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-intro p.lead {
+  font-size: 1.4rem;
+}
+
+/* CARDS */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* MODAL */
+.modal-content {
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  padding: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .header-intro h1 {
+    font-size: 2rem;
+  }
+
+  .header-intro p.lead {
+    font-size: 1.1rem;
+  }
+}
+

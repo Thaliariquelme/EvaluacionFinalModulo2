@@ -1,0 +1,94 @@
+/* FONDO Y COLORES BASE */
+.bg-light-custom {
+  background-color: #fce4ec; /* Rosa muy claro */
+}
+
+.bg-gradient-pink {
+  background: linear-gradient(90deg, #ff99cc, #ffb6c1); /* Degradado rosa suave */
+}
+
+/* TEXTO */
+.text-black {
+  color: #333; /* Negro suave */
+}
+
+/* HEADER INTRO */
+.header-intro {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.header-intro h1 {
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.header-intro p.lead {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.header-intro img:hover {
+  transform: scale(1.05);
+}
+
+/* LISTADO INFO */
+section ul.fs-6 li {
+  margin-bottom: 0.7rem;
+}
+
+section ul.fs-6 li:hover {
+  background-color: #f7f7f7;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* CARRUSEL */
+.carousel-caption h5 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.9rem;
+  background-color: #333;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-weight: 700;
+  color: #333;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 700;
+  border-bottom: 2px solid #ff99cc;
+  border-radius: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f7f7f7;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 576px) {
+  .header-intro h1 {
+    font-size: 2rem;
+  }
+
+  .header-intro p.lead {
+    font-size: 1.2rem;
+  }
+}

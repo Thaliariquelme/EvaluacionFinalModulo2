@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amenazas Comunes - Ciberseguridad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="asset/css/style-amenazas.css" />
+  <script src="https://kit.fontawesome.com/3432f07c5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg py-4">
+    <div class="container">
+      <a class="navbar-brand fs-3 text-dark" href="#">Sitio Informativo - Ciberseguridad</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-dark active" href="amenazas_comunes.html">Amenazas</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="consejos_seguridad.html">Consejos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center py-5 header-intro text-black">
+    <div class="container">
+      <h1 class="display-4">Amenazas Comunes</h1>
+      <p class="lead">Haz clic en cada imagen para conocer los riesgos más frecuentes en Internet</p>
+    </div>
+  </header>
+ <!-- Información sobre ataques cibernéticos como phishing, ransomware, malware y ataques DDoS. -->
+  <section class="container py-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalAmenazas" data-bs-slide-to="0">
+          <img src="asset/img/phishing.jpg" class="card-img-top" alt="Phishing">
+          <div class="card-body">
+            <h5 class="card-title">Phishing</h5>
+            <p class="card-text text-muted small">Haz clic para ver más</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalAmenazas" data-bs-slide-to="1">
+          <img src="asset/img/ransomware.jpg" class="card-img-top" alt="Ransomware">
+          <div class="card-body">
+            <h5 class="card-title">Ransomware</h5>
+            <p class="card-text text-muted small">Haz clic para ver más</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalAmenazas" data-bs-slide-to="2">
+          <img src="asset/img/malware.jpg" class="card-img-top" alt="Malware">
+          <div class="card-body">
+            <h5 class="card-title">Malware</h5>
+            <p class="card-text text-muted small">Haz clic para ver más</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalAmenazas" data-bs-slide-to="3">
+          <img src="asset/img/ddos.jpg" class="card-img-top" alt="DDoS">
+          <div class="card-body">
+            <h5 class="card-title">Ataques DDoS</h5>
+            <p class="card-text text-muted small">Haz clic para ver más</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Uso de tarjetas o secciones interactivas para cada tipo de amenaza.
+   Un carrusel o acordeón con ejemplos de casos reales.  -->
+  <div class="modal fade" id="modalAmenazas" tabindex="-1" aria-labelledby="modalAmenazasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Detalles de la Amenaza</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="carouselAmenazas" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <img src="asset/img/phishing.jpg" class="d-block w-100" alt="Phishing" />
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
+                  <h5>Phishing</h5>
+                  <p>El phishing busca obtener información confidencial haciéndose pasar por una entidad legítima.</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="asset/img/ransomware.jpg" class="d-block w-100" alt="Ransomware" />
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
+                  <h5>Ransomware</h5>
+                  <p>Impide usar tu dispositivo hasta que pagues un rescate económico al atacante.</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="asset/img/malware.jpg" class="d-block w-100" alt="Malware" />
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
+                  <h5>Malware</h5>
+                  <p>Software malicioso que daña o roba información de tu equipo sin tu permiso.</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="asset/img/ddos.jpg" class="d-block w-100" alt="DDoS" />
+                <div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
+                  <h5>Ataques DDoS</h5>
+                  <p>Inundan un servidor con tráfico falso para dejarlo fuera de servicio.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmenazas" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAmenazas" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Thalia Riquelme - Evaluación de módulo</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/script-amenazas.js"></script>
+</body>
+</html>
